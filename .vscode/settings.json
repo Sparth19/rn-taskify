@@ -1,0 +1,6 @@
+{
+    "emmet.optimizeStylesheetParsing": false,
+    "emmet.showAbbreviationSuggestions": false,
+    "emmet.excludeLanguages": [],
+    "emmet.showExpandedAbbreviation": "never"
+}
