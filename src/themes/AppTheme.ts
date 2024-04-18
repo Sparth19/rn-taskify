@@ -7,6 +7,7 @@ export const Colors: {[key: string]: string} = {
   mainTheme2: '#3580FF',
   mainTheme3: '#E9F1FF',
   grayTheme1: '#848A94',
+  grayTheme2: '#868D95',
   darkTheme1: '#191D30',
 };
  

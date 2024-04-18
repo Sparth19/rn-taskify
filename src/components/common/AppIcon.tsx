@@ -6,6 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Icons} from '../../utils/Constants';
 import Metrics from '../../themes/Metrics';
+import {Colors} from '../../themes/AppTheme';
 
 interface IconProps {
   name: string;
@@ -18,7 +19,12 @@ interface IconProps {
   color?: string;
 }
 
-const AppIcon: FC<IconProps> = ({name, type, size = 24, color = 'black'}) => {
+const AppIcon: FC<IconProps> = ({
+  name,
+  type,
+  size = 20,
+  color = Colors.mainTheme1,
+}) => {
   let IconComponent;
 
   switch (type) {

@@ -18,6 +18,10 @@
 		7699B88040F8A987B510C191 /* libPods-Taskify-TaskifyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Taskify-TaskifyTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8BBE0BBE43AB41E1A732E568 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D9685F7A897439E8F91F30C /* Poppins-Black.ttf */; };
+		A86E88A52BD131DB00073974 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CDE92F2BD03E3000360E9B /* MaterialCommunityIcons.ttf */; };
+		A86E88A62BD131FC00073974 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CDE92C2BD03E3000360E9B /* FontAwesome.ttf */; };
+		A86E88A72BD131FC00073974 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CDE92D2BD03E3000360E9B /* Ionicons.ttf */; };
+		A86E88A82BD131FC00073974 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CDE9302BD03E3000360E9B /* MaterialIcons.ttf */; };
 		B49A7BA8F158407DBEDA3B6E /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2493DEAD5F68453896170699 /* Poppins-Bold.ttf */; };
 		DA4A10B50C424E838334D624 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C93B73913F6F48E48FC5E431 /* Poppins-Thin.ttf */; };
 		F3AE9C3D1F6A446B9020BB67 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9EC6632463442ACA3714D9F /* Poppins-Medium.ttf */; };
@@ -278,6 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86E88A62BD131FC00073974 /* FontAwesome.ttf in Resources */,
+				A86E88A72BD131FC00073974 /* Ionicons.ttf in Resources */,
+				A86E88A82BD131FC00073974 /* MaterialIcons.ttf in Resources */,
+				A86E88A52BD131DB00073974 /* MaterialCommunityIcons.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8BBE0BBE43AB41E1A732E568 /* Poppins-Black.ttf in Resources */,
