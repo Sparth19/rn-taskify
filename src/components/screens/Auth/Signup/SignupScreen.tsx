@@ -12,6 +12,7 @@ import {size} from '../../../../themes/Metrics';
 import AppInput from '../../../common/AppInput';
 import AppButton from '../../../common/AppButton';
 import {Colors} from '../../../../themes/AppTheme';
+import {signUp} from '../../../../services/authService';
 
 interface Props {}
 
@@ -19,8 +20,11 @@ const SignupScreen: FC<Props> = props => {
   const [email, setEmail] = useState<string>('');
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+  const [name, setName] = useState<string>('');
 
-  const handleSignup = () => {};
+  const handleSignup = () => {
+    signUp(name, email, password, username);
+  };
 
   return (
     <SafeAreaView style={styles.main}>
@@ -33,6 +37,12 @@ const SignupScreen: FC<Props> = props => {
           </Text>
         </View>
         <View style={{marginHorizontal: size(20)}}>
+          <AppInput
+            value={name}
+            onChange={setName}
+            hint={'Enter your name'}
+            style={{marginVertical: size(10), padding: size(15)}}
+          />
           <AppInput
             value={email}
             onChange={setEmail}
