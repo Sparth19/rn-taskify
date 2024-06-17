@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {Colors, FONTS, FONT_SIZE} from '../../../../themes/AppTheme';
-import {size} from '../../../../themes/Metrics';
+import {Colors, FONTS, FONT_SIZE} from '../../themes/AppTheme';
+import {size} from '../../themes/Metrics';
 
 export default StyleSheet.create({
   main: {
@@ -17,6 +17,12 @@ export default StyleSheet.create({
     fontFamily: FONTS.Poppins400,
     fontSize: FONT_SIZE.small_medium,
     color: Colors.grayTheme2,
+    marginVertical: size(15),
+  },
+  signinText: {
+    fontFamily: FONTS.Poppins500,
+    fontSize: FONT_SIZE.small_medium,
+    color: Colors.mainTheme2,
     marginVertical: size(15),
   },
 });

@@ -1,13 +1,16 @@
 import React, {FC} from 'react';
-import SignupScreen from './src/components/screens/Auth/Signup/SignupScreen';
 import {ApolloProvider} from '@apollo/client';
 import client from './src/services/apolloClient';
 import 'react-native-devsettings/withAsyncStorage';
+import {NavigationContainer} from '@react-navigation/native';
+import MainNavigator from './src/navigation/MainNavigator';
 
 const App: FC = () => {
   return (
     <ApolloProvider client={client}>
-      <SignupScreen />
+      <NavigationContainer>
+        <MainNavigator />
+      </NavigationContainer>
     </ApolloProvider>
   );
 };

@@ -1,4 +1,4 @@
-import {  Dimensions, Platform, StatusBar, PixelRatio} from 'react-native';
+import {Dimensions, Platform, StatusBar, PixelRatio} from 'react-native';
 
 // Retrieve device dimensions
 const {width, height} = Dimensions.get('window');
@@ -35,10 +35,7 @@ const isTablet = (): boolean => {
 };
 
 // Calculate responsive font size
-export const size= (
-  fontSize: number,
-  standardScreenHeight = 812,
-): number => {
+export const size = (fontSize: number, standardScreenHeight = 812): number => {
   const baseScreenWidth = 375;
   const wid = Math.min(width, height);
   const deviceHeight = calculateDeviceHeight();

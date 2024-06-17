@@ -16,6 +16,17 @@ export const signUp = async (
     return data.signUp;
   } catch (error) {
     console.error('Error signing up:', JSON.stringify(error, null, 2));
-    throw error;
+  }
+};
+export const login = async (email: string, password: string) => {
+  try {
+    const {data} = await client.mutate({
+      mutation: SIGN_UP_MUTATION,
+      variables: {input: {email, password}},
+    });
+
+    return data.signUp;
+  } catch (error) {
+    console.error('Error signing up:', JSON.stringify(error, null, 2));
   }
 };

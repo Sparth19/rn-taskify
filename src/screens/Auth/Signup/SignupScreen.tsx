@@ -6,25 +6,29 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import styles from './SingupScreenStyles';
-import AppHeader from '../../../common/AppHeader';
-import {size} from '../../../../themes/Metrics';
-import AppInput from '../../../common/AppInput';
-import AppButton from '../../../common/AppButton';
-import {Colors} from '../../../../themes/AppTheme';
-import {signUp} from '../../../../services/authService';
+import styles from '../authStyles';
+import AppHeader from '../../../components/common/AppHeader';
+import {size} from '../../../themes/Metrics';
+import AppInput from '../../../components/common/AppInput';
+import AppButton from '../../../components/common/AppButton';
+import {signUp} from '../../../services/authService';
 
-interface Props {}
+interface Props {
+  navigation: any;
+}
 
-const SignupScreen: FC<Props> = props => {
+const SignupScreen: FC<Props> = ({navigation}) => {
   const [email, setEmail] = useState<string>('');
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [name, setName] = useState<string>('');
 
-  const handleSignup = () => {
-    signUp(name, email, password, username);
+  const handleSignup = async () => {
+    const result = await signUp(name, email, password, username);
+    console.log('RESULT', result);
   };
+
+  const navigateToSignin = () => navigation.navigate('LoginScreen');
 
   return (
     <SafeAreaView style={styles.main}>
@@ -73,10 +77,8 @@ const SignupScreen: FC<Props> = props => {
 
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Text style={styles.descText}>{`Have an Account? `}</Text>
-            <TouchableOpacity onPress={() => {}}>
-              <Text style={{...styles.descText, color: Colors.mainTheme2}}>
-                Sign In
-              </Text>
+            <TouchableOpacity onPress={navigateToSignin}>
+              <Text style={styles.signinText}>Sign In</Text>
             </TouchableOpacity>
           </View>
         </View>
